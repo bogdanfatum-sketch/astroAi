@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroAi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1>AstroAi</h1>
+
+        <div class="camera-frame">
+          <video id="video" autoplay playsinline></video>
+          <canvas id="canvas" hidden></canvas>
+        </div>
+
+        <div class="actions">
+          <button id="startCameraBtn" type="button">Увімкнути камеру</button>
+          <button id="captureBtn" type="button" disabled>Зробити фото</button>
+        </div>
+
+        <form id="astroForm" class="form-grid">
+          <label>
+            День
+            <select id="day" required></select>
+          </label>
+          <label>
+            Місяць
+            <select id="month" required></select>
+          </label>
+          <label>
+            Рік
+            <select id="year" required></select>
+          </label>
+          <label>
+            Година
+            <select id="hour" required></select>
+          </label>
+          <label>
+            Хвилина
+            <select id="minute" required></select>
+          </label>
+          <label class="full-width">
+            Місто народження
+            <select id="birthPlace" required>
+              <option value="">Оберіть місто</option>
+              <option>Київ</option>
+              <option>Львів</option>
+              <option>Одеса</option>
+              <option>Харків</option>
+              <option>Дніпро</option>
+              <option>Варшава</option>
+              <option>Берлін</option>
+              <option>Лондон</option>
+              <option>Нью-Йорк</option>
+            </select>
+          </label>
+
+          <button type="submit" class="full-width">Згенерувати</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
